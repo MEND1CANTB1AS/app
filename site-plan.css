@@ -76,17 +76,17 @@ p {
 }
 
 .primary {
-  background-color: black;
+  background-color: #071013;
   color: white;
 }
 .secondary {
-  background-color: white;
+  background-color: #fbfffe;
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: #0D21A1;
 }
 .accent2{
-  background-color: var(--accent2-color);
+  background-color: #EEC643;
 }
 
 p.colored {
