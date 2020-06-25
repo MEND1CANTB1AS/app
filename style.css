@@ -11,9 +11,14 @@ body {
   color: white;
 }
 
-h1 {
+a {
+  color: #0D21A1;
+}
+
+h2 {
   font-family: "Merriweather", serif;
   font-size: 32px;
+  color: red;
 }
 
 
