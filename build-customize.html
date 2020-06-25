@@ -37,11 +37,11 @@
         <h3 class="mb-title">
           MOTHERBOARD
         </h3>
-        <select id="mb">
-          <option value="default-mb">Select...</option>
-          <option value="mb_1">Option 1</option>
-          <option value="mb_2">Option 2</option>
-          <option value="mb_3">Option 3</option>
+        <select id="mb" onchange="setMB()">
+          <option value="0">Select...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
         </select>
         <div class="mb-desc">
           <div id="default-mb" class="vis">
@@ -55,9 +55,6 @@
           <div id="mb_2" class="inv">Content 2</div>
           <div id="mb_3" class="inv">Content 3</div>
         </div>
-        <script>
-          document.getElementById("mb").addEventListener("change", setMB());
-        </script>
         
         <h3 class="cpu-title">
           Central Processing Unit (CPU)
