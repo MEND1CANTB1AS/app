@@ -1,4 +1,4 @@
-.home-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -9,9 +9,6 @@
   grid-column: 1/2;
 }
 
-#inv {
-  grid-column: 2/3;
-}
 
 .inv {
   display: none;
