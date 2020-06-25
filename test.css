@@ -1,0 +1,14 @@
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em
+}
+
+#target{
+  grid-column: 1/2;
+}
+
+.inv {
+  grid-column: 2/3;
+}

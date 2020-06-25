@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <style>
+    .inv {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="home-grid">
+      <select id="target">
+        <option value="">Select...</option>
+        <option value="content_1">Option 1</option>
+        <option value="content_2">Option 2</option>
+        <option value="content_3">Option 3</option>
+      </select>
+
+      <div id="content_1" class="inv">
+        Before you begin the journey to your own custom PC we wanted to say
+        thank you for visiting our website. It is our goal to provide you with
+        the best product possible. We believe that you are the best equipped to
+        know what you need in order to get the most out of your computer.
+        Whether you want a machine for video editing or for high-end gaming, we
+        have the parts you need.
+      </div>
+      <div id="content_2" class="inv">Content 2</div>
+      <div id="content_3" class="inv">Content 3</div>
+
+      <script>
+        document
+          .getElementById("target")
+          .addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".vis"),
+              target = document.getElementById(this.value);
+            if (vis !== null) {
+              vis.className = "inv";
+            }
+            if (target !== null) {
+              target.className = "vis";
+            }
+          });
+      </script>
+    </div>
+  </body>
+</html>
