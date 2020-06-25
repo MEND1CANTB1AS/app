@@ -1,10 +1,8 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 1em;
-}
-
 .inv {
   display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1em;
 }

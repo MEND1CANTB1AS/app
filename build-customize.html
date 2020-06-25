@@ -23,7 +23,7 @@
         </ul>
       </nav>
     </header>
-    <div class="content-b-c">
+    
       <main>
         <h2 class="b-c-title">
           BUILD & CUSTOMIZE!
@@ -32,34 +32,62 @@
           Below is a lsit of parts that you can select from. Part compatibility
           is already taken care of on our end. Each part will be analyzed
         </p>
+        <h3 class="mb">
+          MOTHERBOARD
+        </h3>
         <select id="mb">
           <option value="default-mb">Select...</option>
           <option value="mb_1">Option 1</option>
           <option value="mb_2">Option 2</option>
           <option value="mb_3">Option 3</option>
         </select>
-<div class="mb-desc">
-  
-        
-        <div id="default-mb" class="vis">This is what a motherboard does</div>
-        <div id="mb_1" class="inv">Content 1</div>
-        <div id="mb_2" class="inv">Content 2</div>
-        <div id="mb_3" class="inv">Content 3</div>
-</div>
+        <div class="mb-desc">
+          <div id="default-mb" class="vis">This is what a motherboard does</div>
+          <div id="mb_1" class="inv">Content 1</div>
+          <div id="mb_2" class="inv">Content 2</div>
+          <div id="mb_3" class="inv">Content 3</div>
+        </div>
         <script>
-          document
-            .getElementById("mb")
-            .addEventListener("change", function() {
-              "use strict";
-              var vis = document.querySelector(".vis"),
-                target = document.getElementById(this.value);
-              if (vis !== null) {
-                vis.className = "inv";
-              }
-              if (target !== null) {
-                target.className = "vis";
-              }
-            });
+          document.getElementById("mb").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".vis"),
+              target = document.getElementById(this.value);
+            if (vis !== null) {
+              vis.className = "inv";
+            }
+            if (target !== null) {
+              target.className = "vis";
+            }
+          });
+        </script>
+        <hr>
+        <h3 class="mb">
+          Central Processing Unit (CPU)
+        </h3>
+        <select id="cpu">
+          <option value="default-mb">Select...</option>
+          <option value="mb_1">Option 1</option>
+          <option value="mb_2">Option 2</option>
+          <option value="mb_3">Option 3</option>
+        </select>
+        <div class="mb-desc">
+          <div id="default-cpu" class="vis">This is what a cpu does</div>
+          <div id="cpu_1" class="inv">Content 1</div>
+          <div id="cpu_2" class="inv">Content 2</div>
+          <div id="cpu_3" class="inv">Content 3</div>
+        </div>
+        <script>
+          document.getElementById("cpu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".vis"),
+              target = document.getElementById(this.value);
+            if (vis !== null) {
+              vis.className = "inv";
+            }
+            if (target !== null) {
+              target.className = "vis";
+            }
+          });
         </script>
       </main>
     </div>

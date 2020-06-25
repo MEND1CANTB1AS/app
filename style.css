@@ -29,6 +29,9 @@ h2 {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(15, auto);
   grid-gap: 1em;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .b-c-title {
@@ -40,6 +43,9 @@ h2 {
   grid-row: 2/3;
 }
 
+.mb {
+  grid-row
+}
 #options {
   grid-column: 1/2;
   grid-row: 3/4;
