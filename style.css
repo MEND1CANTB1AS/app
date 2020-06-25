@@ -49,15 +49,35 @@ h2 {
 }
 
 #mb {
-  grid-column: 2/3;
-  grid-row: 3/4;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 250px;
   height: 25px;
   
 }
-.mb-desc{
+.mb-desc {
   grid-column: 2/3;
+  grid-row: 4/5;
   font-size: .75em;
 }
+
+.cpu-title {
+  grid-row: 5/6;
+}
+
+#cpu {
+  grid-row: 6/7;
+  width: 250px;
+  height: 25px;
+  grid-column: 1/2;
+}
+
+.cpu-desc{
+  grid-column: 2/3;
+  grid-row: 6/7;
+  
+}
+
 .inv {
   display: none;
 }
