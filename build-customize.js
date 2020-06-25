@@ -1,7 +1,7 @@
-function setMB(opt0, opt1, opt2, opt3)
+function setMB(option)
 {
   var vis = document.querySelector(".vis");
-  var option = document.getElementById(this.value);
+  //var option = document.getElementById(this.value);
   
   /*opt0.className = "inv";
   opt1.className = "inv";
@@ -9,10 +9,12 @@ function setMB(opt0, opt1, opt2, opt3)
   opt3.className = "inv";*/
   
   vis.className = "inv";
-  //option.className = "vis";
+  option.className = "vis";
   
-  document.getElementById("mb_3").className = "vis";
-  alert(opt2);
+  
+  //document.getElementById(this.value).className = "vis";
+  //document.getElementById("mb_3").className = "vis";
+  //alert("Working");
 
 }
 
