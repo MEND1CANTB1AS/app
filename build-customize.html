@@ -23,8 +23,9 @@
         </ul>
       </nav>
     </header>
-    
-      <main>
+
+    <main>
+      <div class="content-b-c">
         <h2 class="b-c-title">
           BUILD & CUSTOMIZE!
         </h2>
@@ -32,7 +33,7 @@
           Below is a lsit of parts that you can select from. Part compatibility
           is already taken care of on our end. Each part will be analyzed
         </p>
-        <h3 class="mb">
+        <h3 class="mb-title">
           MOTHERBOARD
         </h3>
         <select id="mb">
@@ -42,7 +43,13 @@
           <option value="mb_3">Option 3</option>
         </select>
         <div class="mb-desc">
-          <div id="default-mb" class="vis">This is what a motherboard does</div>
+          <div id="default-mb" class="vis">
+            A motherboard is the main printed circuit board in general-purpose
+            computers and other expandable systems. It holds, and allows
+            communication between, many of the crucial electronic components of
+            a system, such as the central processing unit and memory, and
+            provides connectors for other peripherals.
+          </div>
           <div id="mb_1" class="inv">Content 1</div>
           <div id="mb_2" class="inv">Content 2</div>
           <div id="mb_3" class="inv">Content 3</div>
@@ -60,7 +67,7 @@
             }
           });
         </script>
-        <hr>
+        <hr />
         <h3 class="mb">
           Central Processing Unit (CPU)
         </h3>
@@ -70,7 +77,7 @@
           <option value="mb_2">Option 2</option>
           <option value="mb_3">Option 3</option>
         </select>
-        <div class="mb-desc">
+        <div class="cpu-desc">
           <div id="default-cpu" class="vis">This is what a cpu does</div>
           <div id="cpu_1" class="inv">Content 1</div>
           <div id="cpu_2" class="inv">Content 2</div>
@@ -89,8 +96,9 @@
             }
           });
         </script>
-      </main>
-    </div>
+      </div>
+    </main>
+
     <footer>
       <li><a href="site-plan.html">Site-Plan</a></li>
     </footer>

@@ -43,19 +43,21 @@ h2 {
   grid-row: 2/3;
 }
 
-.mb {
-  grid-row
-}
-#options {
+.mb-title{
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-.mb-desc {
+#mb {
   grid-column: 2/3;
   grid-row: 3/4;
+  height: 25px;
+  
 }
-
+.mb-desc{
+  grid-column: 2/3;
+  font-size: .75em;
+}
 .inv {
   display: none;
 }
