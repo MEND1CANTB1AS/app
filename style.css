@@ -12,6 +12,7 @@ nav ul {
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));          
   margin: 0;
   background-color: #071013;
+  width: 100%;
 }
 body {
   max-width: 1080px;
@@ -24,6 +25,23 @@ body {
   padding: 1em;
 }
 
+footer {
+  list-style: none;
+  height: 55px;
+  display: grid;
+  grid-template-columns: repeat(2, auto); 
+  align-items: left;
+  grid-gap: 50px;
+  padding-top: 20px;
+}
+
+.footer-p {
+  grid-column: 1/2;
+}
+
+.footer-links {
+  grid-column: 2/3;
+}
 a {
   color: #0D21A1;
 }
