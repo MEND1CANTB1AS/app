@@ -14,5 +14,6 @@
 }
 
 .inv {
-      display: none;
-    }
+  display: none;
+  grid-column: 2/3;
+}
