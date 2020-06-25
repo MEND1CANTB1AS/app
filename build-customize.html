@@ -49,11 +49,11 @@
           .getElementById("mb")
           .addEventListener("change", function() {
             "use strict";
-            var vis = document.querySelector(".vis"),
+            var vis = document.querySelector(".visMB"),
               option = document.getElementById(this.value);
             
             vis.className = "inv";
-            option.className = "vis";
+            option.className = "visMB";
           });
       </script>
         <div class="mb-desc">
@@ -79,7 +79,7 @@
           <option value="cpu_3">Option 3</option>
         </select>
         <div class="cpu-desc">
-          <div id="default-cpu" class="vis">This is what a cpu does</div>
+          <div id="default-cpu" class="visCPU">This is what a cpu does</div>
           <div id="cpu_1" class="inv">Content 1</div>
           <div id="cpu_2" class="inv">Content 2</div>
           <div id="cpu_3" class="inv">Content 3</div>
@@ -89,11 +89,12 @@
           .getElementById("cpu")
           .addEventListener("change", function() {
             "use strict";
-            var vis = document.querySelector(".vis"),
+            var vis = document.querySelector(".visCPU"),
               option = document.getElementById(this.value);
             
             vis.className = "inv";
-            option.className = "vis";
+            option.className = "visCPU";
+            //alert("Are you sure?");
           });
       </script>
       </div>
