@@ -1,4 +1,4 @@
-function setMB(option)
+/*function setMB(option)
 {
   var vis = document.querySelector(".vis");
   //var option = document.getElementById(this.value);
@@ -6,7 +6,7 @@ function setMB(option)
   /*opt0.className = "inv";
   opt1.className = "inv";
   opt2.className = "inv";
-  opt3.className = "inv";*/
+  opt3.className = "inv";
   
   vis.className = "inv";
   option.className = "vis";
@@ -16,7 +16,7 @@ function setMB(option)
   //document.getElementById("mb_3").className = "vis";
   //alert("Working");
 
-}
+}*/
 
 function setCPU()
 {

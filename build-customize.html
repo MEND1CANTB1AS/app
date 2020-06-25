@@ -37,14 +37,27 @@
         <h3 class="mb-title">
           MOTHERBOARD
         </h3>
-        <select id="mb" onchange="setMB(mb.value)">
+        <select id="mb">
           <option value="mb_0">Select...</option>
           <option value="mb_1">Option 1</option>
           <option value="mb_2">Option 2</option>
           <option value="mb_3">Option 3</option>
         </select>
+        
+        <script>
+          document
+          .getElementById("mb")
+          .addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".vis"),
+              option = document.getElementById(this.value);
+            
+            vis.className = "inv";
+            option.className = "vis";
+          });
+      </script>
         <div class="mb-desc">
-          <div id="mb_0" class="vis">
+          <div id="mb_0" class="visMB">
             A motherboard is the main printed circuit board in general-purpose
             computers and other expandable systems. It holds, and allows
             communication between, many of the crucial electronic components of
@@ -72,8 +85,17 @@
           <div id="cpu_3" class="inv">Content 3</div>
         </div>
         <script>
-          document.getElementById("cpu").addEventListener("change", setCPU());
-        </script>
+          document
+          .getElementById("cpu")
+          .addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".vis"),
+              option = document.getElementById(this.value);
+            
+            vis.className = "inv";
+            option.className = "vis";
+          });
+      </script>
       </div>
     </main>
 
