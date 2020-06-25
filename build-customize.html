@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="content">
-      <header>
-        <div class="logo">
-          <img
-            src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
-            alt="logo"
-            height="150px"
-          />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="build-customize.html">BUILD&CUSTOMIZE</a></li>
-            <li><a href="site-plan.html">FAQ</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+      <div class="logo">
+        <img
+          src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
+          alt="logo"
+          height="150px"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="build-customize.html">BUILD&CUSTOMIZE</a></li>
+          <li><a href="site-plan.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content-b-c">
       <main>
         <h2>
           BUILD & CUSTOMIZE!
@@ -32,13 +32,14 @@
           Below is a lsit of parts that you can select from. Part compatibility
           is already taken care of on our end. Each part will be analyzed
         </p>
-        <select id="target">
-          <option value="">Select...</option>
+        <select id="motherboard">
+          <option value="default-motherboard">Select...</option>
           <option value="content_1">Option 1</option>
           <option value="content_2">Option 2</option>
           <option value="content_3">Option 3</option>
         </select>
 
+        <div id="default-mo"
         <div id="content_1" class="inv">Content 1</div>
         <div id="content_2" class="inv">Content 2</div>
         <div id="content_3" class="inv">Content 3</div>
@@ -58,11 +59,10 @@
               }
             });
         </script>
-
-        <footer>
-          <li><a href="site-plan.html">Site-Plan</a></li>
-        </footer>
       </main>
     </div>
+    <footer>
+      <li><a href="site-plan.html">Site-Plan</a></li>
+    </footer>
   </body>
 </html>
