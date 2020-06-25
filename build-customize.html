@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" scr="build-customize.js"></script>
   </head>
   <body>
     <header>
@@ -55,17 +56,7 @@
           <div id="mb_3" class="inv">Content 3</div>
         </div>
         <script>
-          document.getElementById("mb").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".vis"),
-              target = document.getElementById(this.value);
-            if (vis !== null) {
-              vis.className = "inv";
-            }
-            if (target !== null) {
-              target.className = "vis";
-            }
-          });
+          document.getElementById("mb").addEventListener("change", setMB());
         </script>
         
         <h3 class="cpu-title">
@@ -84,17 +75,7 @@
           <div id="cpu_3" class="inv">Content 3</div>
         </div>
         <script>
-          document.getElementById("cpu").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".vis"),
-              target = document.getElementById(this.value);
-            if (vis !== null) {
-              vis.className = "inv";
-            }
-            if (target !== null) {
-              target.className = "vis";
-            }
-          });
+          document.getElementById("cpu").addEventListener("change", setCPU());
         </script>
       </div>
     </main>
