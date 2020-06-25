@@ -43,19 +43,17 @@
           <option value="mb_2">Option 2</option>
           <option value="mb_3">Option 3</option>
         </select>
-        
+
         <script>
-          document
-          .getElementById("mb")
-          .addEventListener("change", function() {
+          document.getElementById("mb").addEventListener("change", function() {
             "use strict";
             var vis = document.querySelector(".visMB"),
               option = document.getElementById(this.value);
-            
+
             vis.className = "inv";
             option.className = "visMB";
           });
-      </script>
+        </script>
         <div class="mb-desc">
           <div id="mb_0" class="visMB">
             A motherboard is the main printed circuit board in general-purpose
@@ -68,7 +66,7 @@
           <div id="mb_2" class="inv">Content 2</div>
           <div id="mb_3" class="inv">Content 3</div>
         </div>
-        
+
         <h3 class="cpu-title">
           Central Processing Unit (CPU)
         </h3>
@@ -82,22 +80,32 @@
           <div id="default-cpu" class="visCPU">This is what a cpu does</div>
           <div id="cpu_1" class="inv">Content 1</div>
           <div id="cpu_2" class="inv">Content 2</div>
-          <div id="cpu_3" class="inv">Content 3</div>
+          <div id="cpu_3" class="inv">
+            <p>A motherboard is the main printed circuit board in general-purpose
+            computers and other expandable systems. It holds, and allows
+            communication between, many of the crucial electronic components of
+            a system, such as the central processing unit and memory, and
+              provides connectors for other peripherals.</p>
+            <img
+              src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
+              alt="logo"
+              height="150px"
+              style="float:right; display:block"
+            />
+          </div>
         </div>
         <script>
-          document
-          .getElementById("cpu")
-          .addEventListener("change", function() {
+          document.getElementById("cpu").addEventListener("change", function() {
             "use strict";
             var vis = document.querySelector(".visCPU"),
               option = document.getElementById(this.value);
-            
+
             vis.className = "inv";
             option.className = "visCPU";
             //alert("Are you sure?");
           });
-      </script>
-        
+        </script>
+
         <h3 class="gpu-title">
           GraphicsProcessing Unit (GPU)
         </h3>
@@ -114,18 +122,16 @@
           <div id="gpu_3" class="inv">Content 3</div>
         </div>
         <script>
-          document
-          .getElementById("gpu")
-          .addEventListener("change", function() {
+          document.getElementById("gpu").addEventListener("change", function() {
             "use strict";
             var vis = document.querySelector(".visGPU"),
               option = document.getElementById(this.value);
-            
+
             vis.className = "inv";
             option.className = "visGPU";
             //alert("Are you sure?");
           });
-      </script>
+        </script>
       </div>
     </main>
 
