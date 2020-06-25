@@ -9,10 +9,10 @@ function setMB(opt0, opt1, opt2, opt3)
   opt3.className = "inv";*/
   
   vis.className = "inv";
-  option.className = "vis";
+  //option.className = "vis";
   
-  if (option == "mb_1")
-    document.querySelector(".inv").className = "vis";
+  document.getElementById("mb_3").className = "vis";
+  alert(opt2);
 
 }
 
