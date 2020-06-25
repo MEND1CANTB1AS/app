@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 
+header {
+  background-image: url("https://image.freepik.com/free-vector/realistic-blue-circuit-board-backgrond_52683-13903.jpg");
+            
+}
+
+nav {
+  background-color: black;
+}
 body {
   max-width: 1080px;
   background-color: black;
