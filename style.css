@@ -19,28 +19,37 @@ h2 {
   font-family: "Merriweather", serif;
   font-size: 32px;
   color: red;
-}
-
-
-.content-b-c {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(15, 1fr);
-}
-.b-c-title {
+  grid-column: 1/3;
   text-align: center;
   
 }
+
+.content-b-c {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(15, auto);
+  grid-gap: 1em;
+}
+
+.b-c-title {
+  grid-row: 1/2;
+}
+
 .b-c-p-1 {
-  grid-column: 1/3;  
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 
-.options {
+#options {
   grid-column: 1/2;
+  grid-row: 3/4;
 }
 
+.mb-desc {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
 
 .inv {
   display: none;
-  grid-column: 2/3;
 }
