@@ -30,9 +30,10 @@ a {
 
 h1 {
   position: absolute;
-  top: -50px;
-  left: ;
-  font-size:
+  top: 10px;
+  left: 500px;
+  font-size: 3.5em;
+  color: red;
 }
 h2 {
   font-family: "Merriweather", serif;
