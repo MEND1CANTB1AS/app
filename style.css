@@ -12,7 +12,7 @@ nav ul {
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));          
   margin: 0;
   background-color: #071013;
-  width: 100%;
+  text-align: center;
 }
 body {
   max-width: 1080px;
@@ -146,6 +146,7 @@ h2 {
   display: none;
 }
 /*END Build&Customize Code*/
+
 /*Slideshow code*/
 * {
   box-sizing: border-box;
