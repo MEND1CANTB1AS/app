@@ -4,15 +4,18 @@
 
 header {
   background-image: url("https://image.freepik.com/free-vector/realistic-blue-circuit-board-backgrond_52683-13903.jpg");
-            
 }
 
-nav {
-  background-color: black;
+nav ul {
+  list-style: none; /* removes the bullets! */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));          
+  margin: 0;
+  background-color: #071013;
 }
 body {
   max-width: 1080px;
-  background-color: black;
+  background-color: #071013;
   font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
   font-size: 18px;
@@ -25,6 +28,12 @@ a {
   color: #0D21A1;
 }
 
+h1 {
+  position: absolute;
+  top: -50px;
+  left: ;
+  font-size:
+}
 h2 {
   font-family: "Merriweather", serif;
   font-size: 32px;
