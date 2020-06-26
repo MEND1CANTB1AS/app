@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 
 header {
-  background-image: url("https://image.freepik.com/free-vector/realistic-blue-circuit-board-backgrond_52683-13903.jpg");
+  background-image: url("https://1.bp.blogspot.com/-FRgXQ-slyig/XvVfpjK37RI/AAAAAAAAQyY/CN5X5ssiPw4uKTZnET0mp2sP0aT4hCbawCLcBGAsYHQ/s1600/PCBanner.png");
+  background-size: contain;
 }
 
 nav ul {
@@ -52,6 +53,8 @@ h1 {
   left: 500px;
   font-size: 3.5em;
   color: red;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  -webkit-text-stroke: 2px black; /* width and color */
 }
 h2 {
   font-family: "Merriweather", serif;
