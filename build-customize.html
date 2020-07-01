@@ -47,6 +47,20 @@
           <option value="mb_3">Option 3</option>
         </select>
 
+
+        <div class="mb-desc">
+          <div id="mb_0" class="visMB">
+            A motherboard is the main printed circuit board in general-purpose
+            computers and other expandable systems. It holds, and allows
+            communication between, many of the crucial electronic components of
+            a system, such as the central processing unit and memory, and
+            provides connectors for other peripherals.
+          </div>
+          <div id="mb_1" class="inv">Motherboard 1</div>
+          <div id="mb_2" class="inv">Content 2</div>
+          <div id="mb_3" class="inv">Content 3</div>
+        </div>
+        
         <script>
           document.getElementById("mb").addEventListener("change", function() {
             "use strict";
@@ -57,18 +71,6 @@
             option.className = "visMB";
           });
         </script>
-        <div class="mb-desc">
-          <div id="mb_0" class="visMB">
-            A motherboard is the main printed circuit board in general-purpose
-            computers and other expandable systems. It holds, and allows
-            communication between, many of the crucial electronic components of
-            a system, such as the central processing unit and memory, and
-            provides connectors for other peripherals.
-          </div>
-          <div id="mb_1" class="inv">Content 1</div>
-          <div id="mb_2" class="inv">Content 2</div>
-          <div id="mb_3" class="inv">Content 3</div>
-        </div>
 
         <h3 class="cpu-title">
           Central Processing Unit (CPU)
@@ -145,19 +147,15 @@
           <option value="default-ram">Select...</option>
           <option value="ram_1">Option 1</option>
           <option value="ram_2">Option 2</option>
-          <option value="cpu_3">Option 3</option>
+          <option value="ram_3">Option 3</option>
         </select>
-        <div class="cpu-desc">
-          <div id="default-cpu" class="visCPU">This is what a cpu does</div>
-          <div id="cpu_1" class="inv">Content 1</div>
-          <div id="cpu_2" class="inv">Content 2</div>
-          <div id="cpu_3" class="inv">
+        <div class="ram-desc">
+          <div id="default-ram" class="visRAM">RAM Info</div>
+          <div id="ram_1" class="inv">Content 1</div>
+          <div id="ram_2" class="inv">Content 2</div>
+          <div id="ram_3" class="inv">
             <p>
-              A motherboard is the main printed circuit board in general-purpose
-              computers and other expandable systems. It holds, and allows
-              communication between, many of the crucial electronic components
-              of a system, such as the central processing unit and memory, and
-              provides connectors for other peripherals.
+              RAM Option 3
             </p>
             <img
               src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
@@ -168,37 +166,32 @@
           </div>
         </div>
         <script>
-          document.getElementById("cpu").addEventListener("change", function() {
+          document.getElementById("ram").addEventListener("change", function() {
             "use strict";
-            var vis = document.querySelector(".visCPU"),
+            var vis = document.querySelector(".visRAM"),
               option = document.getElementById(this.value);
 
             vis.className = "inv";
-            option.className = "visCPU";
-            //alert("Are you sure?");
+            option.className = "visRAM";
           });
         </script>
         
-        <h3 class="cpu-title">
+        <h3 class="psu-title">
           Power Supply Unit (PSU)
         </h3>
-        <select id="cpu">
-          <option value="default-cpu">Select...</option>
-          <option value="cpu_1">Option 1</option>
-          <option value="cpu_2">Option 2</option>
-          <option value="cpu_3">Option 3</option>
+        <select id="psu">
+          <option value="default-psu">Select...</option>
+          <option value="psu_1">Option 1</option>
+          <option value="psu_2">Option 2</option>
+          <option value="psu_3">Option 3</option>
         </select>
-        <div class="cpu-desc">
-          <div id="default-cpu" class="visCPU">This is what a cpu does</div>
-          <div id="cpu_1" class="inv">Content 1</div>
-          <div id="cpu_2" class="inv">Content 2</div>
-          <div id="cpu_3" class="inv">
+        <div class="psu-desc">
+          <div id="default-psu" class="visPSU">This is what a cpu does</div>
+          <div id="psu_1" class="inv">Content 1</div>
+          <div id="psu_2" class="inv">Content 2</div>
+          <div id="psu_3" class="inv">
             <p>
-              A motherboard is the main printed circuit board in general-purpose
-              computers and other expandable systems. It holds, and allows
-              communication between, many of the crucial electronic components
-              of a system, such as the central processing unit and memory, and
-              provides connectors for other peripherals.
+              PSU Option 3
             </p>
             <img
               src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
@@ -209,14 +202,13 @@
           </div>
         </div>
         <script>
-          document.getElementById("cpu").addEventListener("change", function() {
+          document.getElementById("psu").addEventListener("change", function() {
             "use strict";
-            var vis = document.querySelector(".visCPU"),
+            var vis = document.querySelector(".visPSU"),
               option = document.getElementById(this.value);
 
             vis.className = "inv";
-            option.className = "visCPU";
-            //alert("Are you sure?");
+            option.className = "visPSU";
           });
         </script>
         
@@ -230,30 +222,29 @@
           <option value="cool_3">Option 3</option>
         </select>
         <div class="cool-desc">
-          <div id="default-cool" class="visCool">This is what a cpu does</div>
-          <div id="cool_1" class="inv">Content 1</div>
-          <div id="cool_2" class="inv">Content 2</div>
-          <div id="cool_3" class="inv">
+          <div id="default-cool" class="visCool">
             <p>
               Cooling System Info
             </p>
-            <img
+          </div>
+          <div id="cool_1" class="inv">Content 1
+              <img
               src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
               alt="logo"
               height="150px"
               style="float:right; display:block"
-            />
-          </div>
+            /></div>
+          <div id="cool_2" class="inv">Content 2</div>
+          <div id="cool_3" class="inv">Content 3</div>
         </div>
         <script>
           document.getElementById("cool").addEventListener("change", function() {
             "use strict";
-            var vis = document.querySelector(".visC"),
+            var vis = document.querySelector(".visCool"),
               option = document.getElementById(this.value);
 
             vis.className = "inv";
-            option.className = "visCPU";
-            //alert("Are you sure?");
+            option.className = "visCool";
           });
         </script>
         
