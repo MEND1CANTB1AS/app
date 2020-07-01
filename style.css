@@ -59,9 +59,7 @@ a {
 
 h1 {
   font-family: 'Passion One', cursive;
-  position: absolute;
-  top: 10px;
-  left: 600px;
+  text-align: center;
   font-size: 3.5em;
   color: red;
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
@@ -77,6 +75,10 @@ h2 {
 /*HEADER CSS*/
 .banner {
   style="background-image";
+}
+
+.logo {
+  position: relative;
 }
 
 
