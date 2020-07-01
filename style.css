@@ -179,19 +179,17 @@ h2 {
 }
 */
 
-#customize-grid {
-  
+.customize-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
+
 .selections {
-  width: 50px;
-  float: left;
-  height: 200px;
+  order: 0;
 }
 
 .options {
-  width: 50%;
-  float: right;
-  height: 200px;
+  order: 1;
 }
 .inv {
   display: none;

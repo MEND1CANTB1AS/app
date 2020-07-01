@@ -38,8 +38,11 @@
           is already taken care of on our end. Each part will be analyzed
         </p>
         
-        <div class="selections">
-          <h3>Motherboard</h3>
+        
+
+        <div class="customize-grid">
+          <div class="selections">
+            <h3>Motherboard</h3>
           <select id="mb">
             <option value="mb_0">Select...</option>
             <option value="mb_1">Option 1</option>
@@ -47,9 +50,7 @@
             <option value="mb_3">Option 3</option>
           </select>
         </div>
-
-
-        <div class="options">
+                  <div class="options">
           <div id="mb_0" class="visMB">
             A motherboard is the main printed circuit board in general-purpose
             computers and other expandable systems. It holds, and allows
@@ -61,19 +62,10 @@
           <div id="mb_2" class="inv">Content 2</div>
           <div id="mb_3" class="inv">Content 3</div>
         </div>
-        
-        <script>
-          document.getElementById("mb").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visMB"),
-              option = document.getElementById(this.value);
+        </div>
 
-            vis.className = "inv";
-            option.className = "visMB";
-          });
-        </script>
-        
-        <div class="selections">
+        <div class="customize-grid">
+                  <div class="selections">
           <h3 class="cpu-title">Central Processing Unit (CPU)</h3>
           <select id="cpu">
             <option value="default-cpu">Select...</option>
@@ -82,8 +74,8 @@
             <option value="cpu_3">Option 3</option>
           </select>
         </div>
-
-        <div class="options">
+          
+                  <div class="options">
           <div id="default-cpu" class="visCPU">A central processing unit (CPU), 
             also called a central processor or main processor, 
             is the electronic circuitry within a computer that 
@@ -106,8 +98,20 @@
             />
           </div>
         </div>
-        
+          
+        </div>
+
         <script>
+    //MB
+          document.getElementById("mb").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visMB"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visMB";
+          });
+    //CPU
           document.getElementById("cpu").addEventListener("change", function() {
             "use strict";
             var vis = document.querySelector(".visCPU"),
@@ -115,7 +119,25 @@
 
             vis.className = "inv";
             option.className = "visCPU";
-            //alert("Are you sure?");
+          });
+    //GPU 
+          document.getElementById("gpu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visGPU"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visGPU";
+            
+    //RAM
+          document.getElementById("ram").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visRAM"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visRAM";
+
           });
         </script>
         
@@ -137,17 +159,7 @@
           <div id="gpu_2" class="inv">Content 2</div>
           <div id="gpu_3" class="inv">Content 3</div>
         </div>
-        <script>
-          document.getElementById("gpu").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visGPU"),
-              option = document.getElementById(this.value);
 
-            vis.className = "inv";
-            option.className = "visGPU";
-            //alert("Are you sure?");
-          });
-        </script>
         
         <div class="selections">
           <h3 class="ram-title">
@@ -177,16 +189,6 @@
             />
           </div>
         </div>
-        <script>
-          document.getElementById("ram").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visRAM"),
-              option = document.getElementById(this.value);
-
-            vis.className = "inv";
-            option.className = "visRAM";
-          });
-        </script>
         
         <div class="selections">
           <h3 class="psu-title">
