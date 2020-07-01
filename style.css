@@ -178,6 +178,11 @@ h2 {
   grid-row: 8/9;
 }
 */
+.selections {
+  width: 50px;
+  float: left;
+  
+}
 
 .options {
   width: 50%;

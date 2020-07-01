@@ -37,15 +37,15 @@
           Below is a lsit of parts that you can select from. Part compatibility
           is already taken care of on our end. Each part will be analyzed
         </p>
-        <h3 class="mb-title">
-          Motherboard
-        </h3>
-        <select id="mb">
-          <option value="mb_0">Select...</option>
-          <option value="mb_1">Option 1</option>
-          <option value="mb_2">Option 2</option>
-          <option value="mb_3">Option 3</option>
-        </select>
+        <div class="selections">
+          <h3 class="mb-title">Motherboard</h3>
+          <select id="mb">
+            <option value="mb_0">Select...</option>
+            <option value="mb_1">Option 1</option>
+            <option value="mb_2">Option 2</option>
+            <option value="mb_3">Option 3</option>
+          </select>
+        </div>
 
 
         <div class="options">
@@ -71,16 +71,17 @@
             option.className = "visMB";
           });
         </script>
+        
+        <div class="selections">
+          <h3 class="cpu-title">Central Processing Unit (CPU)</h3>
+          <select id="cpu">
+            <option value="default-cpu">Select...</option>
+            <option value="cpu_1">Option 1</option>
+            <option value="cpu_2">Option 2</option>
+            <option value="cpu_3">Option 3</option>
+          </select>
+        </div>
 
-        <h3 class="cpu-title">
-          Central Processing Unit (CPU)
-        </h3>
-        <select id="cpu">
-          <option value="default-cpu">Select...</option>
-          <option value="cpu_1">Option 1</option>
-          <option value="cpu_2">Option 2</option>
-          <option value="cpu_3">Option 3</option>
-        </select>
         <div class="options">
           <div id="default-cpu" class="visCPU">A central processing unit (CPU), 
             also called a central processor or main processor, 
@@ -115,17 +116,20 @@
             //alert("Are you sure?");
           });
         </script>
-
-        <h3 class="gpu-title">
-          GraphicsProcessing Unit (GPU)
-        </h3>
-        <select id="gpu">
-          <option value="default-cpu">Select...</option>
-          <option value="gpu_1">Option 1</option>
-          <option value="gpu_2">Option 2</option>
-          <option value="gpu_3">Option 3</option>
-        </select>
-        <div class="gpu-desc">
+        
+        <div class="selections">
+          <h3 class="gpu-title">
+            GraphicsProcessing Unit (GPU)
+          </h3>
+          <select id="gpu">
+            <option value="default-cpu">Select...</option>
+            <option value="gpu_1">Option 1</option>
+            <option value="gpu_2">Option 2</option>
+            <option value="gpu_3">Option 3</option>
+          </select>
+        </div>
+  
+        <div class="options">
           <div id="default-gpu" class="visGPU">This is what a gpu does</div>
           <div id="gpu_1" class="inv">Content 1</div>
           <div id="gpu_2" class="inv">Content 2</div>
@@ -143,16 +147,19 @@
           });
         </script>
         
-        <h3 class="ram-title">
-          RAM
-        </h3>
-        <select id="ram">
-          <option value="default-ram">Select...</option>
-          <option value="ram_1">Option 1</option>
-          <option value="ram_2">Option 2</option>
-          <option value="ram_3">Option 3</option>
-        </select>
-        <div class="ram-desc">
+        <div class="selections">
+          <h3 class="ram-title">
+            RAM
+          </h3>
+          <select id="ram">
+            <option value="default-ram">Select...</option>
+            <option value="ram_1">Option 1</option>
+            <option value="ram_2">Option 2</option>
+            <option value="ram_3">Option 3</option>
+          </select>
+        </div>
+
+        <div class="options">
           <div id="default-ram" class="visRAM">RAM Info</div>
           <div id="ram_1" class="inv">Content 1</div>
           <div id="ram_2" class="inv">Content 2</div>
@@ -179,7 +186,8 @@
           });
         </script>
         
-        <h3 class="psu-title">
+        <div class="selections">
+          <h3 class="psu-title">
           Power Supply Unit (PSU)
         </h3>
         <select id="psu">
@@ -188,7 +196,9 @@
           <option value="psu_2">Option 2</option>
           <option value="psu_3">Option 3</option>
         </select>
-        <div class="psu-desc">
+        </div>
+        
+        <div class="options">
           <div id="default-psu" class="visPSU">This is what a cpu does</div>
           <div id="psu_1" class="inv">Content 1</div>
           <div id="psu_2" class="inv">Content 2</div>
@@ -215,7 +225,8 @@
           });
         </script>
         
-        <h3 class="cool-title">
+        <div class="selections">
+          <h3 class="cool-title">
           Cooling
         </h3>
         <select id="cool">
@@ -224,7 +235,9 @@
           <option value="cool_2">Option 2</option>
           <option value="cool_3">Option 3</option>
         </select>
-        <div class="cool-desc">
+        </div>
+        
+        <div class="options">
           <div id="default-cool" class="visCool">
             <p>
               Cooling System Info
