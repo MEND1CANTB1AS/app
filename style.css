@@ -110,74 +110,8 @@ h2 {
 }
 
 /*END HOME CSS*/
-/*Build&Customize Code
-.content-b-c {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(15, auto);
-  grid-gap: 1em;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 1em;
-}
 
-.b-c-title {
-  grid-row: 1/2;
-}
-
-.b-c-p-1 {
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-
-.mb-title {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-#mb {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  width: 250px;
-  height: 25px;
-}
-.mb-desc {
-  grid-column: 2/3;
-  grid-row: 4/5;
-  font-size: 1em;
-}
-
-.cpu-title {
-  grid-row: 5/6;
-}
-
-#cpu {
-  grid-row: 6/7;
-  width: 250px;
-  height: 25px;
-  grid-column: 1/2;
-}
-
-.cpu-desc {
-  grid-column: 2/3;
-  grid-row: 6/7;
-}
-
-.gpu-title {
-  grid-row: 7/8;
-}
-#gpu {
-  grid-row: 8/9;
-  width: 250px;
-  height: 25px;
-  grid-column: 1/2;
-}
-
-.gpu-desc {
-  grid-column: 2/3;
-  grid-row: 8/9;
-}
-*/
+/*Build&Customize Code*/
 
 .customize-grid {
   display: grid;
