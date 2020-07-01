@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PERFORMANCE-PC / HOME</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="/build-customize.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
+          alt="logo"
+          height="150px"
+        />
+      </div>
+      <h1>
+        PERFORMANCE PC
+      </h1>
+      <div class="banner"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="build-customize.html">BUILD/CUSTOMIZE</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-b-c">
+        <h2 class="b-c-title">
+          BUILD & CUSTOMIZE!
+        </h2>
+        <p class="b-c-p-1">
+          Below is a lsit of parts that you can select from. Part compatibility
+          is already taken care of on our end. Each part will be analyzed
+        </p>
+        <h3 class="mb-title">
+          MOTHERBOARD
+        </h3>
+        <select id="mb">
+          <option value="mb_0">Select...</option>
+          <option value="mb_1">Option 1</option>
+          <option value="mb_2">Option 2</option>
+          <option value="mb_3">Option 3</option>
+        </select>
+
+        <script>
+          document.getElementById("mb").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visMB"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visMB";
+          });
+        </script>
+        <div class="mb-desc">
+          <div id="mb_0" class="visMB">
+            A motherboard is the main printed circuit board in general-purpose
+            computers and other expandable systems. It holds, and allows
+            communication between, many of the crucial electronic components of
+            a system, such as the central processing unit and memory, and
+            provides connectors for other peripherals.
+          </div>
+          <div id="mb_1" class="inv">Content 1</div>
+          <div id="mb_2" class="inv">Content 2</div>
+          <div id="mb_3" class="inv">Content 3</div>
+        </div>
+
+        <h3 class="cpu-title">
+          Central Processing Unit (CPU)
+        </h3>
+        <select id="cpu">
+          <option value="default-cpu">Select...</option>
+          <option value="cpu_1">Option 1</option>
+          <option value="cpu_2">Option 2</option>
+          <option value="cpu_3">Option 3</option>
+        </select>
+        <div class="cpu-desc">
+          <div id="default-cpu" class="visCPU">This is what a cpu does</div>
+          <div id="cpu_1" class="inv">Content 1</div>
+          <div id="cpu_2" class="inv">Content 2</div>
+          <div id="cpu_3" class="inv">
+            <p>
+              A motherboard is the main printed circuit board in general-purpose
+              computers and other expandable systems. It holds, and allows
+              communication between, many of the crucial electronic components
+              of a system, such as the central processing unit and memory, and
+              provides connectors for other peripherals.
+            </p>
+            <img
+              src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
+              alt="logo"
+              height="150px"
+              style="float:right; display:block"
+            />
+          </div>
+        </div>
+        <script>
+          document.getElementById("cpu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visCPU"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visCPU";
+            //alert("Are you sure?");
+          });
+        </script>
+
+        <h3 class="gpu-title">
+          GraphicsProcessing Unit (GPU)
+        </h3>
+        <select id="gpu">
+          <option value="default-cpu">Select...</option>
+          <option value="gpu_1">Option 1</option>
+          <option value="gpu_2">Option 2</option>
+          <option value="gpu_3">Option 3</option>
+        </select>
+        <div class="gpu-desc">
+          <div id="default-gpu" class="visGPU">This is what a gpu does</div>
+          <div id="gpu_1" class="inv">Content 1</div>
+          <div id="gpu_2" class="inv">Content 2</div>
+          <div id="gpu_3" class="inv">Content 3</div>
+        </div>
+        <script>
+          document.getElementById("gpu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visGPU"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visGPU";
+            //alert("Are you sure?");
+          });
+        </script>
+      </div>
+    </main>
+    <footer>
+      <p class="footer-p">
+        &copy; 2020 Performance-PC- Adam Paliila - WDD130.16
+      </p>
+      <div class="footer-links">
+        <li style="float:right"><a href="site-plan.html">Site-Plan</a></li>
+      </div>
+    </footer>
+  </body>
+</html>
