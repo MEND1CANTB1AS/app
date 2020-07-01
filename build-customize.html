@@ -43,40 +43,39 @@
         <div class="customize-grid">
           <div class="selections">
             <h3>Motherboard</h3>
-          <select id="mb">
-            <option value="mb_0">Select...</option>
-            <option value="mb_1">Option 1</option>
-            <option value="mb_2">Option 2</option>
-            <option value="mb_3">Option 3</option>
-          </select>
-        </div>
-                  <div class="options">
-          <div id="mb_0" class="visMB">
+            <select id="mb">
+              <option value="mb_0">Select...</option>
+              <option value="mb_1">Option 1</option>
+              <option value="mb_2">Option 2</option>
+              <option value="mb_3">Option 3</option>
+            </select>
+          </div>
+          <div class="options">
+            <div id="mb_0" class="visMB">
             A motherboard is the main printed circuit board in general-purpose
             computers and other expandable systems. It holds, and allows
             communication between, many of the crucial electronic components of
             a system, such as the central processing unit and memory, and
             provides connectors for other peripherals.
+            </div>
+            <div id="mb_1" class="inv">Motherboard 1</div>
+            <div id="mb_2" class="inv">Content 2</div>
+            <div id="mb_3" class="inv">Content 3</div>
           </div>
-          <div id="mb_1" class="inv">Motherboard 1</div>
-          <div id="mb_2" class="inv">Content 2</div>
-          <div id="mb_3" class="inv">Content 3</div>
-        </div>
         </div>
 
         <div class="customize-grid">
-                  <div class="selections">
-          <h3 class="cpu-title">Central Processing Unit (CPU)</h3>
-          <select id="cpu">
-            <option value="default-cpu">Select...</option>
-            <option value="cpu_1">Option 1</option>
-            <option value="cpu_2">Option 2</option>
-            <option value="cpu_3">Option 3</option>
-          </select>
-        </div>
-          
-                  <div class="options">
-          <div id="default-cpu" class="visCPU">A central processing unit (CPU), 
+          <div class="selections">
+            <h3 class="cpu-title">Central Processing Unit (CPU)</h3>
+            <select id="cpu">
+              <option value="default-cpu">Select...</option>
+              <option value="cpu_1">Option 1</option>
+              <option value="cpu_2">Option 2</option>
+              <option value="cpu_3">Option 3</option>
+            </select>
+          </div>
+          <div class="options">
+            <div id="default-cpu" class="visCPU">A central processing unit (CPU), 
             also called a central processor or main processor, 
             is the electronic circuitry within a computer that 
             executes instructions that make up a computer program. 
@@ -84,12 +83,51 @@
             and input/output (I/O) operations specified by the instructions 
             in the program. The computer industry used the term 
             "central processing unit" as early as 1955.</div>
-          <div id="cpu_1" class="inv">Content 1</div>
-          <div id="cpu_2" class="inv">Content 2</div>
-          <div id="cpu_3" class="inv">
-            <p>
-              Content 3
-            </p>
+            <div id="cpu_1" class="inv">Content 1</div>
+            <div id="cpu_2" class="inv">Content 2</div>
+            <div id="cpu_3" class="inv">Content 3 <img
+              src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
+              alt="logo"
+              height="150px"
+              style="float:right; display:block"/></div>  
+          </div>
+        </div>
+
+        
+        <div class="customize-grid">
+          <div class="selections">
+            <h3 class="gpu-title">GraphicsProcessing Unit (GPU)</h3>
+            <select id="gpu">
+              <option value="default-cpu">Select...</option>
+              <option value="gpu_1">Option 1</option>
+              <option value="gpu_2">Option 2</option>
+              <option value="gpu_3">Option 3</option>
+            </select>
+          </div>
+          <div class="options">
+            <div id="default-gpu" class="visGPU">This is what a gpu does</div>
+            <div id="gpu_1" class="inv">Content 1</div>
+            <div id="gpu_2" class="inv">Content 2</div>
+            <div id="gpu_3" class="inv">Content 3</div>
+          </div>
+        </div>
+
+
+        <div class="customize-grid">
+          <div class="selections">
+            <h3 class="ram-title">RAM</h3>
+            <select id="ram">
+              <option value="default-ram">Select...</option>
+              <option value="ram_1">Option 1</option>
+              <option value="ram_2">Option 2</option>
+              <option value="ram_3">Option 3</option>
+            </select>
+          </div>
+          <div class="options">
+            <div id="default-ram" class="visRAM">RAM Info</div>
+            <div id="ram_1" class="inv">Content 1</div>
+            <div id="ram_2" class="inv">Content 2</div>
+            <div id="ram_3" class="inv">RAM Option 3
             <img
               src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
               alt="logo"
@@ -97,100 +135,12 @@
               style="float:right; display:block"
             />
           </div>
-        </div>
-          
-        </div>
-
-        <script>
-    //MB
-          document.getElementById("mb").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visMB"),
-              option = document.getElementById(this.value);
-
-            vis.className = "inv";
-            option.className = "visMB";
-          });
-    //CPU
-          document.getElementById("cpu").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visCPU"),
-              option = document.getElementById(this.value);
-
-            vis.className = "inv";
-            option.className = "visCPU";
-          });
-    //GPU 
-          document.getElementById("gpu").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visGPU"),
-              option = document.getElementById(this.value);
-
-            vis.className = "inv";
-            option.className = "visGPU";
-            
-    //RAM
-          document.getElementById("ram").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visRAM"),
-              option = document.getElementById(this.value);
-
-            vis.className = "inv";
-            option.className = "visRAM";
-
-          });
-        </script>
-        
-        <div class="selections">
-          <h3 class="gpu-title">
-            GraphicsProcessing Unit (GPU)
-          </h3>
-          <select id="gpu">
-            <option value="default-cpu">Select...</option>
-            <option value="gpu_1">Option 1</option>
-            <option value="gpu_2">Option 2</option>
-            <option value="gpu_3">Option 3</option>
-          </select>
-        </div>
-  
-        <div class="options">
-          <div id="default-gpu" class="visGPU">This is what a gpu does</div>
-          <div id="gpu_1" class="inv">Content 1</div>
-          <div id="gpu_2" class="inv">Content 2</div>
-          <div id="gpu_3" class="inv">Content 3</div>
+        </div> 
         </div>
 
         
-        <div class="selections">
-          <h3 class="ram-title">
-            RAM
-          </h3>
-          <select id="ram">
-            <option value="default-ram">Select...</option>
-            <option value="ram_1">Option 1</option>
-            <option value="ram_2">Option 2</option>
-            <option value="ram_3">Option 3</option>
-          </select>
-        </div>
-
-        <div class="options">
-          <div id="default-ram" class="visRAM">RAM Info</div>
-          <div id="ram_1" class="inv">Content 1</div>
-          <div id="ram_2" class="inv">Content 2</div>
-          <div id="ram_3" class="inv">
-            <p>
-              RAM Option 3
-            </p>
-            <img
-              src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
-              alt="logo"
-              height="150px"
-              style="float:right; display:block"
-            />
-          </div>
-        </div>
-        
-        <div class="selections">
+        <div class="customize-grid">
+          <div class="selections">
           <h3 class="psu-title">
           Power Supply Unit (PSU)
         </h3>
@@ -218,35 +168,23 @@
             />
           </div>
         </div>
-        <script>
-          document.getElementById("psu").addEventListener("change", function() {
-            "use strict";
-            var vis = document.querySelector(".visPSU"),
-              option = document.getElementById(this.value);
-
-            vis.className = "inv";
-            option.className = "visPSU";
-          });
-        </script>
-        
-        <div class="selections">
-          <h3 class="cool-title">
-          Cooling
-        </h3>
-        <select id="cool">
-          <option value="default-cool">Select...</option>
-          <option value="cool_1">Option 1</option>
-          <option value="cool_2">Option 2</option>
-          <option value="cool_3">Option 3</option>
-        </select>
         </div>
         
-        <div class="options">
-          <div id="default-cool" class="visCool">
-            <p>
-              Cooling System Info
-            </p>
+        
+        <div class="customize-grid">
+          <div class="selections">
+            <h3 class="cool-title">Cooling</h3>
+            <select id="cool">
+              <option value="default-cool">Select...</option>
+              <option value="cool_1">Option 1</option>
+              <option value="cool_2">Option 2</option>
+              <option value="cool_3">Option 3</option>
+           </select>
           </div>
+        
+          <div class="options">
+            <div id="default-cool" class="visCool">
+            <p>Cooling System Info</p></div>
           <div id="cool_1" class="inv">Content 1
               <img
               src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
@@ -257,8 +195,58 @@
           <div id="cool_2" class="inv">Content 2</div>
           <div id="cool_3" class="inv">Content 3</div>
         </div>
-        <script>
-          document.getElementById("cool").addEventListener("change", function() {
+        </div>
+        
+      </div>
+      
+      <script>
+    //MB
+          document.getElementById("mb").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visMB"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visMB";
+          });
+    //CPU
+          document.getElementById("cpu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visCPU"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visCPU";
+          });
+    //GPU 
+          document.getElementById("gpu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visGPU"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visGPU";
+          });
+    //RAM
+          document.getElementById("ram").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visRAM"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visRAM";
+          });
+    //PSU
+          document.getElementById("psu").addEventListener("change", function() {
+            "use strict";
+            var vis = document.querySelector(".visPSU"),
+              option = document.getElementById(this.value);
+
+            vis.className = "inv";
+            option.className = "visPSU";
+          });
+    //Cooling
+         document.getElementById("cool").addEventListener("change", function() {
             "use strict";
             var vis = document.querySelector(".visCool"),
               option = document.getElementById(this.value);
@@ -267,8 +255,7 @@
             option.className = "visCool";
           });
         </script>
-        
-      </div>
+      
       <div class="center">
         <a href="customer-info.html" class="button">ASSEMBLE</a>
       </div>
