@@ -113,16 +113,16 @@ h2 {
 
 /*Build&Customize Code*/
 
-.customize-grid {
+.column-grid {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.selections {
+.left {
   order: 0;
 }
 
-.options {
+.right {
   order: 1;
 }
 .inv {

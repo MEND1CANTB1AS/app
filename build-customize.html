@@ -40,8 +40,8 @@
         
         
 
-        <div class="customize-grid">
-          <div class="selections">
+        <div class="column-grid">
+          <div class="left">
             <h3>Motherboard</h3>
             <select id="mb">
               <option value="mb_0">Select...</option>
@@ -50,7 +50,7 @@
               <option value="mb_3">Option 3</option>
             </select>
           </div>
-          <div class="options">
+          <div class="right">
             <div id="mb_0" class="visMB">
             A motherboard is the main printed circuit board in general-purpose
             computers and other expandable systems. It holds, and allows
@@ -70,8 +70,8 @@
 
         <hr>
         
-        <div class="customize-grid">
-          <div class="selections">
+        <div class="column-grid">
+          <div class="left">
             <h3>Central Processing Unit (CPU)</h3>
             <select id="cpu">
               <option value="default-cpu">Select...</option>
@@ -80,7 +80,7 @@
               <option value="cpu_3">Option 3</option>
             </select>
           </div>
-          <div class="options">
+          <div class="right">
             <div id="default-cpu" class="visCPU">A central processing unit (CPU), 
             also called a central processor or main processor, 
             is the electronic circuitry within a computer that 
@@ -100,8 +100,8 @@
 
         <hr>
         
-        <div class="customize-grid">
-          <div class="selections">
+        <div class="column-grid">
+          <div class="left">
             <h3>GraphicsProcessing Unit (GPU)</h3>
             <select id="gpu">
               <option value="default-cpu">Select...</option>
@@ -110,8 +110,16 @@
               <option value="gpu_3">Option 3</option>
             </select>
           </div>
-          <div class="options">
-            <div id="default-gpu" class="visGPU">This is what a gpu does</div>
+          <div class="right">
+            <div id="default-gpu" class="visGPU">A graphics processing unit (GPU) 
+              is a specialized electronic circuit designed to rapidly manipulate 
+              and alter memory to accelerate the creation of images in a frame 
+              buffer intended for output to a display device. Modern GPUs are 
+              very efficient at manipulating computer graphics and image processing. 
+              Their highly parallel structure makes them more efficient than 
+              general-purpose central processing units (CPUs) for algorithms 
+              that process large blocks of data in parallel. 
+              A GPU can be present on a video card or embedded on the motherboard.</div>
             <div id="gpu_1" class="inv">Content 1</div>
             <div id="gpu_2" class="inv">Content 2</div>
             <div id="gpu_3" class="inv">Content 3</div>
@@ -120,9 +128,9 @@
 
         <hr>
 
-        <div class="customize-grid">
-          <div class="selections">
-            <h3 class="ram-title">RAM</h3>
+        <div class="column-grid">
+          <div class="left">
+            <h3 class="ram-title">Random-Access Memory (RAM)</h3>
             <select id="ram">
               <option value="default-ram">Select...</option>
               <option value="ram_1">Option 1</option>
@@ -130,8 +138,18 @@
               <option value="ram_3">Option 3</option>
             </select>
           </div>
-          <div class="options">
-            <div id="default-ram" class="visRAM">RAM Info</div>
+          <div class="right">
+            <div id="default-ram" class="visRAM">Random-access memory (RAM) is a
+              form of computer memory that can be read and changed in any order,
+              typically used to store working data and machine code. 
+              A random-access memory device allows data items to be read or 
+              written in almost the same amount of time irrespective of the 
+              physical location of data inside the memory. In contrast, with 
+              other direct-access data storage media such as hard disks, CD-RWs, 
+              DVD-RWs and the older magnetic tapes and drum memory, the time 
+              required to read and write data items varies significantly depending
+              on their physical locations on the recording medium, due to 
+              mechanical limitations such as media rotation speeds and arm movement.</div>
             <div id="ram_1" class="inv">Content 1</div>
             <div id="ram_2" class="inv">Content 2</div>
             <div id="ram_3" class="inv">RAM Option 3
@@ -146,8 +164,8 @@
 
         <hr>
         
-        <div class="customize-grid">
-          <div class="selections">
+        <div class="column-grid">
+          <div class="left">
             <h3 class="psu-title">Power Supply Unit (PSU)</h3>
             <select id="psu">
               <option value="default-psu">Select...</option>
@@ -156,7 +174,7 @@
               <option value="psu_3">Option 3</option>
             </select>
           </div>
-          <div class="options">
+          <div class="right">
             <div id="default-psu" class="visPSU">This is what a cpu does</div>
             <div id="psu_1" class="inv">Content 1</div>
             <div id="psu_2" class="inv">Content 2</div>
@@ -172,8 +190,8 @@
         
         <hr>
         
-        <div class="customize-grid">
-          <div class="selections">
+        <div class="column-grid">
+          <div class="left">
             <h3 class="cool-title">Cooling</h3>
             <select id="cool">
               <option value="default-cool">Select...</option>
@@ -182,20 +200,16 @@
               <option value="cool_3">Option 3</option>
            </select>
           </div>
-          <div class="options">
+          <div class="right">
             <div id="default-cool" class="visCool">
             <p>Cooling System Info</p></div>
-            <div id="cool_1" class="inv">Content 1
-              <img
-              src="https://1.bp.blogspot.com/-VYROp1weKv8/XuVloMjd2cI/AAAAAAAAQeE/xFKVKVNmJOk6-tnCnLTMFRyoZd09QL-KwCLcBGAsYHQ/s1600/Performance%2BPC%2BLogo.png"
-              alt="logo"
-              height="150px"
-              style="float:right; display:block"
-            /></div>
+            <div id="cool_1" class="inv">Content 1</div>
           <div id="cool_2" class="inv">Content 2</div>
           <div id="cool_3" class="inv">Content 3</div>
         </div>
       </div>
+        
+      
         
       </div>
       
