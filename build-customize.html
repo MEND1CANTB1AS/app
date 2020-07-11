@@ -39,7 +39,7 @@
           Below is a lsit of parts that you can select from. Part compatibility
           is already taken care of on our end. Each part will be analyzed
         </p>
-
+        <hr />
         <div class="column-grid">
           <div class="left">
             <h3>Motherboard</h3>
@@ -376,7 +376,7 @@
             </select>
           </div>
           <div class="right">
-            <div id="default-case" class="visCool">
+            <div id="default-case" class="visCase">
               The computer case is the housing for all of your PC components.
               You can be subtle or you can be flashy in your case decision. No
               case we offer is wrong as all of your components will fit.
@@ -413,6 +413,7 @@
             </div>
           </div>
         </div>
+        <hr />
       </div>
 
       <script>
@@ -469,6 +470,15 @@
 
           vis.className = "inv";
           option.className = "visCool";
+        });
+        //Case
+        document.getElementById("case").addEventListener("change", function() {
+          "use strict";
+          var vis = document.querySelector(".visCase"),
+            option = document.getElementById(this.value);
+
+          vis.className = "inv";
+          option.className = "visCase";
         });
       </script>
 
