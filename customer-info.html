@@ -47,10 +47,13 @@
 
       <script>
         function myFunction() {
-          alert("Your Order Has Been Submitted");
-          location.href="index.html"
+          //confirm("Y");
+          if (window.confirm("Your Order Has Been Submitted")) {
+            window.location.href = 'index.html';
+          } else {
+            // They clicked no
+          }
         }
-        
       </script>
     </main>
     <footer>
