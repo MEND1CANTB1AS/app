@@ -36,8 +36,14 @@
         </h2>
         <p class="b-c-p-1">
           Below is a lsit of parts that you can select from. Part compatibility
-          is already taken care of on our end. Each part will be analyzed
+          is already taken care of on our end. Each part will be analyzed. You
+          can also select the three preselected options below.
         </p>
+        <div style="text-align: center">
+          <button onclick="myHighPerformance()">High Performance</button>
+          <button onclick="myMidRange()">MidRange</button>
+          <button onclick="myBudget()">Budget</button>
+        </div>
         <hr />
         <div class="column-grid">
           <div class="left">
@@ -415,73 +421,6 @@
         </div>
         <hr />
       </div>
-
-      <script>
-        //MB
-        document.getElementById("mb").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visMB"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visMB";
-        });
-        //CPU
-        document.getElementById("cpu").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visCPU"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visCPU";
-        });
-        //GPU
-        document.getElementById("gpu").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visGPU"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visGPU";
-        });
-        //RAM
-        document.getElementById("ram").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visRAM"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visRAM";
-        });
-        //PSU
-        document.getElementById("psu").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visPSU"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visPSU";
-        });
-        //Cooling
-        document.getElementById("cool").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visCool"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visCool";
-        });
-        //Case
-        document.getElementById("case").addEventListener("change", function() {
-          "use strict";
-          var vis = document.querySelector(".visCase"),
-            option = document.getElementById(this.value);
-
-          vis.className = "inv";
-          option.className = "visCase";
-        });
-      </script>
-
       <div class="center">
         <a href="customer-info.html" class="button">ASSEMBLE</a>
       </div>
@@ -494,5 +433,6 @@
         <li style="float:right"><a href="site-plan.html">Site-Plan</a></li>
       </div>
     </footer>
+    <script src="build-customize.js"></script>
   </body>
 </html>
